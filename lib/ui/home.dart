@@ -71,7 +71,7 @@ class HomeState extends State<Home> {
                   children: <Widget>[
                     new TextField(
                       controller: ageController,
-                      keyboardType: TextInputType.number,
+                      keyboardType: TextInputType.numberWithOptions(decimal: true),
                       decoration: new InputDecoration(
                           labelText: 'Age',
                           hintText: 'e.g 23',
@@ -79,7 +79,7 @@ class HomeState extends State<Home> {
                     ),
                     new TextField(
                       controller: heightController,
-                      keyboardType: TextInputType.number,
+                      keyboardType: TextInputType.numberWithOptions(decimal: true),
                       decoration: new InputDecoration(
                           labelText: 'Height in meter',
                           hintText: 'e.g 1.4',
@@ -87,7 +87,7 @@ class HomeState extends State<Home> {
                     ),
                     new TextField(
                       controller: weightController,
-                      keyboardType: TextInputType.number,
+                      keyboardType: TextInputType.numberWithOptions(decimal: true),
                       decoration: new InputDecoration(
                           labelText: 'Weight in kg',
                           hintText: 'e.g 70',
